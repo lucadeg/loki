@@ -1,5 +1,8 @@
+
 name: "Pull Request Labeler"
 on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 - pull_request
 
 jobs:

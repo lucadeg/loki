@@ -1,14 +1,9 @@
+
 name: operator build
 
 on:
-  push:
-    paths:
-      - 'operator/**'
-    branches: [ main ]
-  pull_request:
-    paths:
-      - 'operator/**'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   docs:
     name: docs

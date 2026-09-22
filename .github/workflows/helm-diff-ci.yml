@@ -1,11 +1,9 @@
+
 ---
 name: Helm Loki Diff CI
 on:
-  pull_request:
-    paths:
-      - "production/helm/loki/**"
-
-# These permissions are needed to assume roles from Github's OIDC.
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
   pull-requests: write

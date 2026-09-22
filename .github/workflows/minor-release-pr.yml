@@ -1,3 +1,4 @@
+
 concurrency:
   group: "create-release-pr-${{ github.sha }}"
 env:
@@ -1126,10 +1127,9 @@ jobs:
         fi
       working-directory: "lib"
 name: "Prepare Minor Release PR from Weekly"
-"on":
-  push:
-    branches:
-    - "k[0-9]+"
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: "read"
   pull-requests: "read"

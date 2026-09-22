@@ -1,14 +1,9 @@
+
 name: publish-technical-documentation-release
 
 on:
-  push:
-    branches:
-      - "release-*"
-    tags:
-      - "v[0-9]+.[0-9]+.[0-9]+"
-    paths:
-      - "docs/sources/**"
   workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   sync:
     if: github.repository == 'grafana/loki'

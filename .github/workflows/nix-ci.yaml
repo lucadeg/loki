@@ -1,16 +1,9 @@
+
 ---
 name: "Lint And Build Nix Flake"
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    paths:
-      - "flake.nix"
-      - "flake.lock"
-      - "go.mod"
-      - "nix/**"
-      - .github/workflows/nix-ci.yaml
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   lint:
     runs-on: ubuntu-x64

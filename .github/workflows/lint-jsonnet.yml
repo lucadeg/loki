@@ -1,10 +1,9 @@
+
 ---
 name: lint-jsonnet
 on:
-  [pull_request]
-  # pull_request:
-  #   paths: "production/**"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   check-mixin:
     name: Check mixin jsonnet files

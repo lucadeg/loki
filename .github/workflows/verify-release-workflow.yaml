@@ -1,5 +1,8 @@
+
 name: Verify release workflow updates
-on: [pull_request]
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   check-release-changes:
     runs-on: ubuntu-x64

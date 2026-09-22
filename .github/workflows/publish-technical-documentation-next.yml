@@ -1,12 +1,9 @@
+
 name: publish-technical-documentation-next
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "docs/sources/**"
   workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   sync:
     if: github.repository == 'grafana/loki'

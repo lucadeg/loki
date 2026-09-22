@@ -1,12 +1,9 @@
+
 name: operator-release-please
 
 on:
-  push:
-    paths:
-      - 'operator/**'
-    branches:
-      - main
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
   pull-requests: read

@@ -1,10 +1,11 @@
+
 # Test workflow to verify Loki binaries compile successfully for multiple Linux architectures.
 # This ensures PRs don't break cross-platform builds.
 name: Test Build Loki Binaries
 
 on:
-  pull_request: {}
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
 

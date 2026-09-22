@@ -1,19 +1,9 @@
+
 name: Claude Code Review
 
 on:
-  pull_request:
-    types: [labeled]
-    # Skip workflow if only docs files are changed
-    paths-ignore:
-      - "docs/**"
-      - "**/*.md"
-    # Optional: Only run on specific file changes (use paths instead of paths-ignore)
-    # paths:
-    #   - "src/**/*.ts"
-    #   - "src/**/*.tsx"
-    #   - "src/**/*.js"
-    #   - "src/**/*.jsx"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   claude-review:
     # Only run when the 'claude-review' label is added

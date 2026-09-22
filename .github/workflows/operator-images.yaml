@@ -1,13 +1,10 @@
+
 name: operator images
 
 on:
-  push:
-    paths:
-      - 'operator/**'
-    branches:
-      - main
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   publish-grafana-operator:
     uses: ./.github/workflows/operator-reusable-image-build.yml

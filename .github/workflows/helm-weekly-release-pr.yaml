@@ -1,11 +1,10 @@
+
 name: Helm weekly release PR
 
 on:
-  schedule:
-    - cron: '0 10 * * 2' # 10 UTC every Tuesday (since ks get cut on Monday)
-
   workflow_dispatch: # for manual testing
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: "read"
   id-token: "write"

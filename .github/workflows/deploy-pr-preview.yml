@@ -1,16 +1,11 @@
+
 name: Deploy pr preview
 
 permissions: {}
 
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - closed
-    paths:
-      - "docs/sources/**"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   deploy-pr-preview:
     if: "!github.event.pull_request.head.repo.fork"

@@ -1,12 +1,9 @@
+
 name: operator-check-prepare-release-commit
 
 on:
-  pull_request:
-    paths:
-      - 'operator/**'
-    branches:
-      - main
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   check-commit:
     runs-on: ubuntu-latest

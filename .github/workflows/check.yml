@@ -1,3 +1,4 @@
+
 "jobs":
   "check":
     "uses": "grafana/loki-release/.github/workflows/check.yml@48ee065d8d1e3f1a3a28cb1e5ecf5cb85211a019"
@@ -8,11 +9,9 @@
       "skip_validation": false
       "use_github_app_token": true
 "name": "check"
-"on":
-  "pull_request": {}
-  "push":
-    "branches":
-    - "main"
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 "permissions":
   "contents": "read"
   "pull-requests": "read"

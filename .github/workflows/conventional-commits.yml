@@ -1,6 +1,9 @@
+
 ---
 name: enforce conventional commits
-on: [pull_request]
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   check-title:
     runs-on: ubuntu-x64-small

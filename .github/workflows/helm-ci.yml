@@ -1,11 +1,9 @@
+
 ---
 name: helm-ci
 on:
-  pull_request:
-    paths:
-      - "production/helm/**"
-      - ".github/workflows/helm-ci.yml"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 env:
   CT_CONFIGFILE: production/helm/ct.yaml
   INTEGRATION_TESTS_DIR: production/helm/loki/test/integration

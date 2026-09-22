@@ -1,10 +1,8 @@
+
 name: Backport PR Creator
 on:
-  pull_request:
-    types:
-      - closed
-      - labeled
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   main:
     # We don't run the backporting for PRs from forks because those can't access "loki-github-bot" secrets in vault.
